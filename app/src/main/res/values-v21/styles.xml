@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+    </style>
+</resources>
+<!-- Now the navigation bar, if you recall, cant be changed on Android versions before Lollipop (v21).
+Now theres nothing we can do about the navigation bar before Lollipop, so the important thing to focus on is making sure
+your app works and looks good. And it can be futile trying to make it look identical across all versions of Android, because
+there will be times when older devices just dont have the same capabilities-->

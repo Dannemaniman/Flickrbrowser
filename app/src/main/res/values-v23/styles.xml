@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--targetar version 23 och över -->
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+        <item name="android:colorBackgroundFloating">@color/primary</item> <!-- @ means were referring to a resource, @color means its found in the color resource file.-->
+    </style><!-- the attribute called colorBackgroundFloating is responsible for setting backgroundcolor for floating widgets, like pop ups, dialogues and our cardview widget.-->
+</resources><!-- why have I used **android:** in android:colorBa... but not in the others? Reason is its because of where the properties live.
+Now were using the appCompat in this app, which means a lot of the attributes arent coming from the Android framework instead they exist in
+compability libraries. Now the libraries are linked into the app, so these attributes exist in the app itself.
+So if we delete it, were telling Android that the property exist in the app, not in the framework, so if we dont specify a namespace, then the
+attribute must exist in our app. Now this includes the support libraries that are compiled with our app code.
+
+To summarize:
+
+If support for an attribute is being provided by the support libraries, you dont specify a namespace (t ex om dem har varit med sedan version 1).
+If support for an attributes provided by the android framework, then you specify the android: namespace.
+If an attribute exists in both places, and you're using the support library, then dont use the namespace.
+If you're not using the support libraries, theres only one place that the attributes can exist, so you dont need the android: namespace.
+You can specify it if you want.-->
+
+<!--Jag skapar en custom stylesheet för v23, enkelt att göra i create new value file, och sen välja version längst ner i listan -->
